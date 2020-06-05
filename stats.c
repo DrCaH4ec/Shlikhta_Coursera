@@ -12,7 +12,7 @@
  * @file 	stats.c
  * @brief 	C-file for first assesment task on course
  *
- * This file should solve next task:
+ * This file should solve next tasks:
  *
  * 	- Find:
  * 		Maximum

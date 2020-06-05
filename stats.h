@@ -38,4 +38,79 @@
  */
 
 
+/**
+ * This function just find a max element of array "array" with "size" elements
+ * 
+ * @param  array Pointer to first element of array of unsigned char type
+ * @param  size  Amount of elements in array
+ * 
+ * @return       Max element of given array
+ */
+unsigned char find_maximum(unsigned char *array, uint size);
+
+
+/**
+ * This function just find a min element of array "array" with "size" elements
+ * 
+ * @param  array Pointer to first element of array of unsigned char type
+ * @param  size  Amount of elements in array
+ * 
+ * @return       Min element of given array
+ */
+unsigned char find_minimum(unsigned char *array, uint size);
+
+
+/**
+ * This function just find a mean value of array "array" with "size" elements
+ * 
+ * @param  array Pointer to first element of array of unsigned char type
+ * @param  size  Amount of elements in array
+ * 
+ * @return       Mean value of given array which is rounded to the nearest integer
+ */
+unsigned char find_mean(unsigned char *array, uint size);
+
+
+/**
+ * This function just find a median of array "array" with "size" elements.
+ * If "size" is paired and median isn't integer -> median will be rounded to
+ * nearest integer
+ * 
+ * @param  array Pointer to first element of array of unsigned char type
+ * @param  size  Amount of elements in array
+ * 
+ * @return       Median of given array which is rounded to the nearest integer
+ */
+unsigned char find_median(unsigned char *array, uint size);
+
+
+/**
+ * This function prints to terminal the statistics of an array "array" including 
+ * minimum, maximum, mean, and median
+ *
+ * @param  array Pointer to first element of array of unsigned char type
+ * @param  size  Amount of elements in array
+ */
+void print_statistics(unsigned char *array, uint size);
+
+
+/**
+ * This function prints array "array" to terminal
+ *
+ * @param  array Pointer to first element of array of unsigned char type
+ * @param  size  Amount of elements in array
+ */
+void print_array(unsigned char *array, uint size);
+
+
+/**
+ * This function sorts array "array" from the largest to the smallest element.
+ * It means that 	array[0] = the largest
+ * 					array[size-1] = the smallest
+ *
+ * @param  array Pointer to first element of array of unsigned char type
+ * @param  size  Amount of elements in array
+ */
+void sort_array(unsigned char *array, uint size);
+
 #endif /* __STATS_H__ */
