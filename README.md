@@ -29,7 +29,7 @@ This code can:
 * Print statistics to terminal
 
 ## Status
-Project is: __in progress__
+Project is: __in progress but can be modified__
 
 ## Inspiration
 Base files was takken in this repo: https://github.com/afosdick/ese-coursera-course1/tree/master/assessments/m1
