@@ -46,9 +46,6 @@ int main(void) {
                                       201,   6,  12,  60,   8,   2,   5,  67,
                                         7,  87, 250, 230,  99,   3, 100,  90};
 
-  /* Other Variable Declarations Go Here */
-  /* Statistics and Printing Functions Go Here */
-
 
         printf("\nUnsorted array\n");
         printf("##############\n\n");
@@ -63,8 +60,6 @@ int main(void) {
 
         return 0;
 }
-
-/* Add other Implementation File Code Here */
 
 void print_array(unsigned char *array, unsigned int size)
 {
