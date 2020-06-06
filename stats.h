@@ -31,7 +31,7 @@
  * 
  * @return       Max element of given array
  */
-unsigned char find_maximum(unsigned char *array, uint size);
+unsigned char find_maximum(unsigned char *array, unsigned int size);
 
 
 /**
@@ -42,7 +42,7 @@ unsigned char find_maximum(unsigned char *array, uint size);
  * 
  * @return       Min element of given array
  */
-unsigned char find_minimum(unsigned char *array, uint size);
+unsigned char find_minimum(unsigned char *array, unsigned int size);
 
 
 /**
@@ -53,7 +53,7 @@ unsigned char find_minimum(unsigned char *array, uint size);
  * 
  * @return       Mean value of given array which is rounded to the nearest integer
  */
-unsigned char find_mean(unsigned char *array, uint size);
+unsigned char find_mean(unsigned char *array, unsigned int size);
 
 
 /**
@@ -66,7 +66,7 @@ unsigned char find_mean(unsigned char *array, uint size);
  * 
  * @return       Median of given array which is rounded to the nearest integer
  */
-unsigned char find_median(unsigned char *array, uint size);
+unsigned char find_median(unsigned char *array, unsigned int size);
 
 
 /**
@@ -76,7 +76,7 @@ unsigned char find_median(unsigned char *array, uint size);
  * @param  array Pointer to first element of array of unsigned char type
  * @param  size  Amount of elements in array
  */
-void print_statistics(unsigned char *array, uint size);
+void print_statistics(unsigned char *array, unsigned int size);
 
 
 /**
@@ -85,17 +85,29 @@ void print_statistics(unsigned char *array, uint size);
  * @param  array Pointer to first element of array of unsigned char type
  * @param  size  Amount of elements in array
  */
-void print_array(unsigned char *array, uint size);
+void print_array(unsigned char *array, unsigned int size);
 
 
 /**
  * This function sorts array "array" from the largest to the smallest element.
  * It means that 	array[0] = the largest
- * 					array[size-1] = the smallest
+ * 		        array[size-1] = the smallest
  *
  * @param  array Pointer to first element of array of unsigned char type
  * @param  size  Amount of elements in array
  */
-void sort_array(unsigned char *array, uint size);
+void sort_array(unsigned char *array, unsigned int size);
+
+
+/**
+ * This function compares 2 arguments and set any_val to one of three states
+ *         x1 < x2 -> any_val < 0
+ *         x1 = x2 -> any_val = 0
+ *         x1 > x2 -> any_val > 0
+ * @param  x1 First argument to compare
+ * @param  x2 Second argument to compare
+ * @return    any_val
+ */
+int compare(const void * x1, const void * x2);
 
 #endif /* __STATS_H__ */
